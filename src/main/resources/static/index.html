@@ -17,22 +17,22 @@
     <table class="table">
         <thead>
         <tr>
+            <th>image</th>
             <th>productName</th>
             <th>basePrice</th>
             <th>category</th>
             <th>productMaterial</th>
-            <th>imageUrl</th>
             <th>delivery</th>
             <th>details</th>
         </tr>
         </thead>
         <tbody>
         <tr ng-repeat="p in products">
+            <td><img ng-src="{{p.imageUrl}}" width="180" height="150"/></td>
             <td>{{p.productName}}</td>
             <td>{{p.basePrice}}</td>
             <td>{{p.category}}</td>
             <td>{{p.productMaterial}}</td>
-            <td>{{p.imageUrl}}</td>
             <td>{{p.delivery}}</td>
             <td>{{p.details}}</td>
         </tr>
